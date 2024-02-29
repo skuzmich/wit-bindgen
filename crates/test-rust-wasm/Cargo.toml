@@ -1,6 +1,7 @@
 [package]
 name = "test-rust-wasm"
 authors = ["Alex Crichton <alex@alexcrichton.com>"]
+version.workspace = true
 edition.workspace = true
 publish = false
 
