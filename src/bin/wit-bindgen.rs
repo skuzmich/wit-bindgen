@@ -64,6 +64,15 @@ enum Opt {
         #[clap(flatten)]
         args: Common,
     },
+
+    /// Generates bindings for Kotlin guest modules.
+    #[cfg(feature = "kotlin")]
+    Kotlin {
+        #[clap(flatten)]
+        opts: wit_bindgen_kotlin::Opts,
+        #[clap(flatten)]
+        args: Common,
+    },
 }
 
 #[derive(Debug, Parser)]
@@ -111,6 +120,8 @@ fn main() -> Result<()> {
         Opt::TinyGo { opts, args } => (opts.build(), args),
         #[cfg(feature = "csharp")]
         Opt::CSharp { opts, args } => (opts.build(), args),
+        #[cfg(feature = "kotlin")]
+        Opt::Kotlin { opts, args } => (opts.build(), args),
     };
 
     gen_world(generator, &opt, &mut files)?;
