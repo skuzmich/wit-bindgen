@@ -325,7 +325,7 @@ checksum = "98cc8fbded0c607b7ba9dd60cd98df59af97e84d24e49c8557331cfc26d301ce"
 
 [[package]]
 name = "codegen-macro"
-version = "0.24.0"
+version = "0.25.0"
 dependencies = [
  "heck 0.5.0",
  "quote",
@@ -1209,7 +1209,7 @@ dependencies = [
 
 [[package]]
 name = "rust-xcrate-test"
-version = "0.24.0"
+version = "0.25.0"
 dependencies = [
  "wit-bindgen",
 ]
@@ -1397,11 +1397,11 @@ checksum = "e1fc403891a21bcfb7c37834ba66a547a8f402146eba7265b5a6d88059c9ff2f"
 
 [[package]]
 name = "test-artifacts"
-version = "0.24.0"
+version = "0.25.0"
 
 [[package]]
 name = "test-helpers"
-version = "0.24.0"
+version = "0.25.0"
 dependencies = [
  "codegen-macro",
  "wasm-encoder 0.209.0",
@@ -1412,7 +1412,7 @@ dependencies = [
 
 [[package]]
 name = "test-rust-wasm"
-version = "0.24.0"
+version = "0.25.0"
 dependencies = [
  "rust-xcrate-test",
  "wit-bindgen",
@@ -2402,7 +2402,7 @@ dependencies = [
 
 [[package]]
 name = "wit-bindgen-kotlin"
-version = "0.24.0"
+version = "0.25.0"
 dependencies = [
  "anyhow",
  "clap",
@@ -2411,7 +2411,7 @@ dependencies = [
  "wasm-metadata",
  "wit-bindgen-core",
  "wit-component",
- "wit-parser 0.206.0",
+ "wit-parser 0.209.0",
 ]
 
 [[package]]
